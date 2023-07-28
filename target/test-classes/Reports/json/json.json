@@ -1,0 +1,176 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2023-07-22T16:51:35.055Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1300100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before3()"
+            }
+          },
+          {
+            "result": {
+              "duration": 103401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 74900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.before1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 75000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeTag()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "To validate login function valid and invalid datas.",
+        "description": "",
+        "id": "to-verify-the-login-functionality.;to-validate-login-function-valid-and-invalid-datas.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 190401,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterTag()"
+            }
+          },
+          {
+            "result": {
+              "duration": 94100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after3()"
+            }
+          },
+          {
+            "result": {
+              "duration": 99000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after2()"
+            }
+          },
+          {
+            "result": {
+              "duration": 93200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.after1()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 23798658200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "To user launch Chrome browser.",
+            "match": {
+              "location": "WithHeader.toUserLaunchChromeBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3314129200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "To user enter \"java\" and \"1111\".",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"java\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"1111\"",
+                  "offset": 25
+                }
+              ],
+              "location": "ScenarioOutlineLogin.toUserEnterAnd(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 208841199,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "To user click login button.",
+            "match": {
+              "location": "WithHeader.toUserClickLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element \u003cbutton value\u003d\"1\" class\u003d\"_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy\" name\u003d\"login\" data-testid\u003d\"royal_login_button\" type\u003d\"submit\" id\u003d\"u_0_5_L2\"\u003e...\u003c/button\u003e is not clickable at point (959, 304). Other element would receive the click: \u003cdiv class\u003d\"_3ixn\"\u003e\u003c/div\u003e\n  (Session info: chrome\u003d114.0.5735.199)\nBuild info: version: \u00274.10.0\u0027, revision: \u0027c14d967899\u0027\nSystem info: os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_361\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [13e1b4acc810cc59f018ab4613abad8c, clickElement {id\u003d1CC0C320A012CC825E4D3D8D7B8F881F_element_16}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\\Users\\Computer\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:52994}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52994/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nElement: [[ChromeDriver: chrome on windows (13e1b4acc810cc59f018ab4613abad8c)] -\u003e name: login]\nSession ID: 13e1b4acc810cc59f018ab4613abad8c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:242)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy22.click(Unknown Source)\r\n\tat org.base.BaseClasses.clickElement(BaseClasses.java:120)\r\n\tat org.stepdefintion.ScenarioOutlineLogin.toUserVerifyTheValid(ScenarioOutlineLogin.java:24)\r\n\tat ✽.To user verify the valid.(file:src/test/resources/FeatureFile1/ScenarioOutline.feature:9)\r\n",
+              "duration": 6918576900,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "To user verify the valid.",
+            "match": {
+              "location": "ScenarioOutlineLogin.toUserVerifyTheValid()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "To verify the login functionality.",
+    "description": "",
+    "id": "to-verify-the-login-functionality.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/FeatureFile1/ScenarioOutline.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
